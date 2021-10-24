@@ -1,6 +1,6 @@
 /* Copyright (C) 2020 Yusuf Usta.
 re edited by afnan-plk  
-PINKY V2 
+PINKY 
 */
 
 const { Sequelize } = require('sequelize');
@@ -24,6 +24,7 @@ module.exports = {
     REMOVE: process.env.THERI_KICK_GP === undefined ? 'false' : process.env.THERI_KICK_GP,
     AFN: process.env.ALL_CAPTION === undefined ? 'MADE BY RUBY' : process.env.ALL_CAPTION,
     ALL_LINK_BAN: process.env.ALL_LINK_BAN === undefined ? 'false' : process.env.ALL_LINK_BAN,
+    STANDPLK: process.env.STANDBY_MODE === undefined ? 'off' : process.env.STANDBY_MODE,
     PM_BLOCK: process.env.PM_BLOCK === undefined ? 'false' : process.env.PM_BLOCK,
     Z_PINKY_AI: process.env.Z_PINKY_AI === undefined ? 'false' : process.env.Z_PINKY_AI,
     PLK: process.env.OWNER_NAME === undefined ? 'default' : process.env.OWNER_NAME,
@@ -40,7 +41,6 @@ module.exports = {
     BOTPLK: process.env.BOT_NAME === undefined ? 'RUBY BOT' : process.env.BOT_NAME,
     NOLOG: process.env.NO_LOG === undefined ? 'false' : process.env.NO_LOG,
     TALKING_PINKY: process.env.TALKING_PINKY === undefined ? 'false' : process.env.TALKING_PINKY,
-    SAID: process.env.BGM_DURATION === undefined ? '39999600' : process.env.BGM_DURATION,
     STICKERP: process.env.STICKER_REPLY === undefined ? false : convertToBool(process.env.STICKER_REPLY),
     BGMFILTER: process.env.BGM_FILTER === undefined ? false : convertToBool(process.env.BGM_FILTER),
     DISBGM: process.env.DISABLE_JID_BGM_FILTER === undefined ? false : process.env.DISABLE_JID_BGM_FILTER,
@@ -56,7 +56,7 @@ module.exports = {
     PLKS: process.env.THERI_LIST_GP === undefined ? false : process.env.THERI_LIST_GP,
     HANDLERS: process.env.HANDLERS === undefined ? '^[.!;]' : process.env.HANDLERS,
     SEND_READ: process.env.SEND_READ === undefined ? false : convertToBool(process.env.SEND_READ),
-    MAHN: process.env.MAAN === undefined ? '918289836232,0' : process.env.MAAN, //dont change thise , if you change this some plugins created by me might not work for others or might have error ( bcoz this is a api key )
+    MAHN: "918289836232,0",
     BRANCH: 'master',
     HEROKU: {
         HEROKU: process.env.HEROKU === undefined ? false : convertToBool(process.env.HEROKU),
@@ -72,7 +72,7 @@ module.exports = {
     DEBUG: DEBUG,
     COFFEEHOUSE_API_KEY: process.env.COFFEEHOUSE_API_KEY === undefined ? false : process.env.COFFEEHOUSE_API_KEY,
     WITAI_API: "TEYMELA6DMC4XB5YM3SPTTQWUUIBKURG",
-    SUPPORT: "905524317852-1612300121",
+    SUPPORT: "919072790587-1627666570",
     SUPPORT2: "905511384572-1617736751",
     SUPPORT3: "905511384572-1621015274"
 };
