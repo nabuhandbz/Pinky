@@ -1,6 +1,7 @@
 /*Codded by @phaticusthiccy
 recodded by afnan plk
 PINKY V2 
+
 */
 
 const MyPnky = require('../events');
@@ -63,6 +64,7 @@ function webp2mp4File(path) {
     })
 }
 
+if (Config.STANDPLK == 'off' || Config.STANDPLK == 'OFF') {
 if (Config.WORKTYPE == 'private') {
 
     MyPnky.addCommand({pattern: 'mp3$', fromMe: true, desc: Lang.MP4TOAUDİO_DESC}, (async (message, match) => {    
@@ -209,7 +211,7 @@ else if (Config.WORKTYPE == 'public') {
         usge = '```.doc pinky```'
     }
     
-     MyPnky.addCommand({pattern: 'doc ?(.*)', fromMe: true, desc: doc_desc , usage : usge}, (async (message, match) => { 
+     MyPnky.addCommand({pattern: 'doc ?(.*)', fromMe: false, desc: doc_desc , usage : usge}, (async (message, match) => { 
       
         if (match[1] === '') return await message.client.sendMessage(message.jid,'give me a name',MessageType.text);  
         const mid = message.jid
@@ -233,3 +235,4 @@ else if (Config.WORKTYPE == 'public') {
 
 }
     
+}
